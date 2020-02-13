@@ -1,34 +1,48 @@
 <!DOCTYPE html>
-
+<html lang="ja">
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="art-work-style.css">
-    <title>art-work</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ArtStation</title>
+    <link rel="stylesheet" href="http://unpkg.com/ress/ist/less.min.css">
+    <link rel="stylesheet" href="ArtStation-style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
 </head>
-
 <body>
-    <header>
-        <div class="header-left">
-            <img src="#" alt="art-work">
-        </div>
-        <div class="header-right">
-            <ul>
-                <li><a href="#">楽しみ方</a></li>
-                <li><a href="#">新規登録</a href="#"></li>
-                <li><a href="#">ログイン</a href="#"></li>
-            </ul>
-        </div>
-        <div class="header-middle">
-            <input type="text" name="text" size="20">
-            <input type="radio" name="radio" value="美術館" checked>美術館
-            <input type="radio" name="radio" value="クリエイター">クリエイター
-            <input type="radio" name="radio" value="ユーザー">ユーザー
-        </div>
-    </header>
-    <div class="top-page">
+    <nav>
+        <label class="logo">Art<i><span>S</span></i>tation</label>
+        <ul>
+            <li><input type="text" placeholder="検索"></li>
+            <li><a href="#" id="modal-open">LOGIN</a></li>
+        </ul>
+    </nav>
+    
+    <main>
 
-    </div>
-    <div class="object">
+    </main>
+    
+    <div id="glaylayer"></div>
 
+    <div id="login-modal">
+        <div class="text">LOGIN</div>
+        <form action="#">
+            <div class="field">
+                <div class="fas fa-envelope"></div>
+                <input type="text" placeholder="Email">
+            </div>
+            <div clas="field">
+                <div class="fas fa-lock"></div>
+                <input type="password" placeholder="Password">
+            </div>
+            <button>LOGIN</button>
+            <div class="link">
+                新規登録はこちら
+                <a href="#">ATTEND</a>
+            </div>
+        </form>
     </div>
+    <script type="text/javascript" src="jQuery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="ArtStation.js"></script>
 </body>
+</html>
